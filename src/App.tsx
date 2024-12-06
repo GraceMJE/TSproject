@@ -6,6 +6,8 @@ import Home from './pages/Home';
 import Movies from './pages/Movies';
 import Search from './pages/Search';
 import MovieDetails from './pages/MovieDetails';
+import Login from './pages/Login'; // Login 페이지 추가
+import SignUp from './pages/SignUp'; // SignUp 페이지 추가
 
 const App: React.FC = () => {
     return (
@@ -17,6 +19,8 @@ const App: React.FC = () => {
                 <Route path="/movies" element={<Movies />} />
                 <Route path="/search" element={<Search />} />
                 <Route path="/movie/:id" element={<MovieDetails />} />
+                <Route path="/login" element={<Login />} /> {/* Login 경로 */}
+                <Route path="/signup" element={<SignUp />} /> {/* SignUp 경로 */}
             </Routes>
         </Router>
     );

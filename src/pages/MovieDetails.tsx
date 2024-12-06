@@ -36,7 +36,7 @@ const MovieDetails: React.FC = () => {
     }
 
     return (
-        <Container style={{ marginTop: '20px', padding: 0 }}>
+        <Container style={{ marginLeft: '200px', marginTop: '100px', padding: 0 }}>
             <Box
                 sx={{
                     display: 'flex',
@@ -59,20 +59,24 @@ const MovieDetails: React.FC = () => {
                     }}
                 />
                 <Box sx={{ flex: 1 }}>
-                    <Typography variant="h4" gutterBottom>
+                    <Typography variant="h4" fontWeight={'bold'} gutterBottom>
                         {movie.title}
                     </Typography>
-                    <Typography variant="h6" color="textSecondary" paragraph>
+                    <Typography variant="h6"
+                                color="textSecondary"
+                                marginBottom={'12px'}>
                         {movie.tagline}
                     </Typography>
-                    <Typography variant="body1" paragraph>
+                    <Typography variant="body1"
+                                marginRight={'350px'}
+                                marginBottom={'50px'}>
                         {movie.overview}
                     </Typography>
                     <Typography variant="subtitle1" color="textSecondary">
-                        출시일: {movie.release_date}
+                        📆 개봉일: {movie.release_date}
                     </Typography>
-                    <Typography variant="subtitle1" color="textSecondary" paragraph>
-                        평점: {movie.vote_average} / 10
+                    <Typography variant="subtitle1" color="textSecondary">
+                        ⭐ 평점: {movie.vote_average} / 10
                     </Typography>
                     <Button
                         variant="contained"

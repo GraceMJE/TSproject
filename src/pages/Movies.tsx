@@ -31,8 +31,8 @@ const Movies: React.FC = () => {
     }, [category]);
 
     return (
-        <div style={{ marginLeft: '180px', padding: '20px' }}>
-            <Typography variant="h4" gutterBottom>영화 테마</Typography>
+        <div style={{ marginLeft: '180px', marginTop: '70px', padding: '20px' }}>
+            <Typography variant="h4" gutterBottom>🎬 Movies</Typography>
             <div>
                 {categories.map((cat) => (
                     <Button

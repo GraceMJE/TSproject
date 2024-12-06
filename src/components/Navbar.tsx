@@ -6,7 +6,7 @@ const Navbar: React.FC = () => {
     const navigate = useNavigate();
 
     return (
-        <AppBar position="static" style={{ background: '#fff', color: '#000' }}>
+        <AppBar position="fixed" style={{ background: '#fff', color: '#000' }}>
             <Toolbar style={{ display: 'flex', justifyContent: 'space-between' }}>
                 <Typography
                     variant="h6"
